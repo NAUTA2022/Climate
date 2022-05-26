@@ -25,10 +25,6 @@ body,input { font-family: 'Roboto Condensed', sans-serif;}
   box-shadow: 11.41px 11.41px 24px #003470, -11.41px -11.41px 24px #001328;
   background: linear-gradient(145deg, #004FA9, #001328);
 }
-.title:hover {
-    transform: scale(1.05) ;
-    transition:  all 1s ;
-}
 
 .final {
   color: #ffffff50;
@@ -48,4 +44,110 @@ body,input { font-family: 'Roboto Condensed', sans-serif;}
 .redes:hover {
     transform: scale(1.05) ;
     transition:  all 1s ;
+}
+
+.b1 {
+
+}
+.b1:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.b2 {
+  
+}
+.b2:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.b3 {
+  
+}
+.b3:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.b4 {
+  
+}
+.b4:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+nav {
+  padding: 5px 0px 0px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #001b3c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  display: flex;
+  margin-left: -15px;
+
+}
+.item1:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.item2:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.item3:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.item6:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+
+
+.menu {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 0%;
+    width: 100%
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+
+
+.item {
+  order: 3;
+  display: block;
+  width: auto;
+}
+
+.menu li {
+  padding: 0px 10px 0px;
+  font-size: 2vw;
+}
+
+@media all and (max-width: 800px) {
+.menu li {
+  padding: 0px 3px 0px;
+  font-size: 5vw;
+ }
 }

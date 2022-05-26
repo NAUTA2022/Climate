@@ -39,7 +39,7 @@ function onSearch(ciudad) {
     });
   }
    } else {
-    alert("Ciudad no encontrada.");
+    alert("City not found.");
      }
   });
 }

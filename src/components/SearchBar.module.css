@@ -76,3 +76,16 @@
 	font-size: 5vw;
 }
 }
+
+@media all and (max-width: 800px) {
+
+
+.searchBar {
+	padding: 0.25rem;
+	margin: 0% 5%;
+	margin-top: 0.5rem;
+
+}
+
+
+	}
