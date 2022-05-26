@@ -1,0 +1,117 @@
+.card {
+	position: relative;
+
+	border-radius: 1rem;
+   
+    border: 0px solid var(--border-color);
+
+    padding: 5vw;
+
+	height: 9vw;
+
+	backdrop-filter: blur(8px);
+    background-color: var(--card-bkg-color);
+
+
+}
+
+.card:hover {
+		transform: scale(1.05) ;
+		transition:  all 0.8s ;
+}
+
+
+
+.cardBtn {
+	position: absolute;
+	top: 0.25rem;
+	right: 0.25rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 1.5rem;
+	height: 1.5rem;
+	box-sizing: border-box;
+
+	border: 1px solid transparent;
+	border-radius: 9999px;
+
+	color: white;
+	cursor: pointer;
+
+	background-color: var(--btn-bkg-danger);
+    transition: background-color 300ms;
+
+}
+
+
+.cardBtn:hover {
+	background-color: var(--btn-bkg-danger-hover);
+	transform: scale(1.5) ;
+    transition:  all 0.8s ;
+}
+
+.card > section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.name {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #00000080;
+}
+
+.mainCard {
+	border-color: #fff;
+	height: 50vw;
+
+}
+
+.mainCard .cardBtn {
+	display: none;
+}
+
+.mainCard .name {
+	text-align: left;
+	
+	font-size: 8vw;
+	color: #ffffff;
+}
+
+.mainCard > section {
+align-items: flex-start;
+}
+
+.mainCard > section > .temp {
+	color: white;
+	font-size: 4vw;
+	padding-top: 0rem;
+}
+
+.mainCard > section > img {
+	height: 6rem;
+	width: 6rem;
+
+}
+
+@media all and (max-width: 780px) {
+.card {
+
+    padding: 10vw;
+
+	height: 15rem;
+}
+.mainCard .name {
+	font-size: 20vw;
+}
+
+.mainCard {
+	margin-top: 2rem;
+	border: 1px solid white;
+	background-color: #0C356430;
+}
+
+}
