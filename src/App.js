@@ -50,14 +50,15 @@ function onClose(id) {
 
 
   return (
-    <div className={style.app}>
+    <div className="App">
+    <div className="container">
+    <div className="row">
+    <SearchBar onSearch={(ciudad) => onSearch(ciudad)}/>
+    </div>
+      
 
-      <header className={style.header}>
-        <SearchBar onSearch={(ciudad) => onSearch(ciudad)}/>
-      </header>
-
-      <main className={style.main}>
-      <section className={style.mainCity}>
+    <main className={style.main}>
+    <section className={style.mainCity}>
 
 
         {cities.length ? (
@@ -74,6 +75,7 @@ function onClose(id) {
 <Cards cities={cities} onClose={onClose} />
 </section>
 </main>
+</div>
 </div>
 );
 }

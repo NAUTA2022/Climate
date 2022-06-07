@@ -2,26 +2,48 @@ import React from 'react';
 
 import style from "./SearchBar.module.css";
 
+const SearchBar = ({onSearch}) => {
 
-export default function SearchBar({onSearch}) {
-  // acá va tu código
   return (
-          <form 
-          className={style.searchBar} 
-          onSubmit={(e) => {
-             e.preventDefault();
 
-             const input = document.getElementById("cityInput");
+   <nav>
 
-             onSearch(input.value);
+  <ul class="menu navbar  rounded-5 col-sm-4" >
+    
+    <li class="item">
+          <a class="MH" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <p>☁</p>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Climate</a></li>
+            <li><a class="dropdown-item" href="#">About</a></li>
+          </ul>
+        </li>
 
-             input.value= "";
-            }}
-            >
-               <input id="cityInput" className={style.input} placeholder='Search & add cities...' />
-                     <button className={style.submit} type="submit">
-                     🔎
-                            </button>
-                           </form>
+    <li class="item3 col-sm-8">
+
+   <form 
+   className="d-flex" 
+   onSubmit={(e) => {
+   e.preventDefault();
+
+   const input = document.getElementById("cityInput");
+
+   onSearch(input.value);
+
+   input.value= "";
+   }}
+   >
+<input id="cityInput" className="form-control rounded-5" placeholder='Search & add cities...' />
+<button className= "btn btn-outline-success rounded-5" type="submit">
+🔎
+</button>
+   </form>
+    </li>
+    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+  </ul>
+</nav>
+
   );
 }
+export default SearchBar;
