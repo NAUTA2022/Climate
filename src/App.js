@@ -1,4 +1,5 @@
 import React from 'react';
+import Alert from './components/alert.jsx';
 import Card from './components/Card.jsx';
 import Cards from './components/Cards.jsx';
 import SearchBar from './components/SearchBar.jsx';
@@ -50,6 +51,7 @@ function onClose(id) {
 
 
   return (
+
     <div className="App">
     <div className="container">
     <div className="row">
@@ -75,6 +77,9 @@ function onClose(id) {
 <Cards cities={cities} onClose={onClose} />
 </section>
 </main>
+    <div className="row">
+    <Alert/>
+    </div>
 </div>
 </div>
 );
